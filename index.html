@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form example</title>
+    <link rel="style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="container1">
+        <div class="row1 justify-content-center mt-5">
+            <div class="col-md-12 offset-md-1">
+                <!-- the firts row-->
+                <div class="card border-primary mb-3" style="max: width 100%;;">
+                    <div class="card-header">
+                        <h3 class="mb-0">Payment form example</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="error-msg" class="alert alert-danger">Some fields are missing</div>
+                        <form method="post" action="#">
+                            <div class="row mt-4">
+                                <div class="col-sm-5 pb-3">
+                                    <form>
+                                        <label for="exampleAccount">Card #
+                                            <input class="form-control" id="exampleAccount"
+                                                placeholder="XXXXXXXXXXXXXXXX" type="text">
+                                    </form>
+                                </div>
+                                <div class="col-sm-3 pb-3">
+                                    <form>
+                                        <label for="exampleCtrl">CVC #</label>
+                                        <input class="form-control" id="exampleCtrl" placeholder="0000" type="text">
+                                    </form>
+                                </div>
+                                <div class="col-sm-4 pb-3">
+                                    <form>
+                                        <label for="exampleAmount">Amount</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <p class="fas fa-dollar-sign"></p>
+
+                                            </div>
+
+                                            <label>
+                                                <input class="form-control" id="exampleAmount" placeholder="Amount"
+                                                    type="number"></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="container2">
+                                    <div class="row2">
+                                        <div class="col-sm-6 pb-3">
+                                            <form>
+                                                <label for="exampleFirst">First Name</label>
+                                                <input class="form-control" id="exampleFirst" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6 pb-3">
+                                            <form>
+                                                <label for="exampleLast">Last Name</label>
+                                                <input class="form-control" id="exampleLast" type="text">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container3">
+                                    <div class="row3 d-flex align-items-center">
+                                        <div class="col-sm-6 pb-3">
+                                            <form>
+                                                 <label for="exampleCity">City</label> <input class="form-control"
+                                                        id="exampleCity" type="text">
+                                            </form>
+                                        </div>
+
+                                        <div class="col-sm-3 pb-3">
+                                            <label for="exampleCity">City</label> 
+
+                                            <select class="form-select " aria-label="Default select example">
+                                        
+                                                <option selected>Pick a state</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select> 
+
+                                        </div>
+                                        <div class="col-sm-3 pb-3">
+                                            <label for="exampleZip">Postal Code</label>
+                                            <input class="form-control" id="exampleZip" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <p for="exampleAccount">We accept:</p>
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-secondary">
+                                            <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                            <i class="fab fa-cc-mastercard"></i>
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input autocomplete="off" id="red" name="options" type="radio">
+                                            <i class="fab fa-cc-visa"></i>
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input autocomplete="off" id="green" name="options" type="radio">
+                                            <i class="fab fa-cc-diners-club"></i>
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input autocomplete="off" id="yellow" name="options" type="radio">
+                                            <i class="fab fa-cc-amex"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <label for="exampleMessage">Message</label>
+                                    <textarea class="form-control" id="complexExampleMessage" rows="3"></textarea>
+                                    <small class="text-muted">Add any notes here.</small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-secondary" type="reset">Cancel</button>
+                            <button id="sendForm" class="btn btn-primary" type="button" />Send</button>
+                        </div>
+                    </div>
+                </div><!--/card-->
+            </div>
+        </div><!--/row-->
+    </div>
