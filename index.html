@@ -14,133 +14,101 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-12 offset-md-1">
-                <!-- the firts row-->
-                <div class="card border-primary mb-3 w-100">
-                    <div class="card-header">
-                        <h3 class="p-2">Payment form example</h3>
+    <form>
+        <div class="container card border-primary mb-3 w-100">
+            <div class="card-header">
+                <h3 class="p-2">Payment form example</h3>
+            </div>
+            <div class="card-body">
+                <p class="alert alert-danger">Some fields are missing</p>
+                <div class="row mt-4">
+                    <fieldset class="col-sm-5 pb-3">
+                        <label for="exampleAccount">Card #</label>
+                        <input class="form-control w-100" id="exampleAccount" placeholder="XXXXXXXXXXXXXXXX" type="text"
+                            required>
+                    </fieldset>
+                    <fieldset class="col-sm-3 pb-3">
+                        <label for="exampleCtrl">CVC #</label>
+                        <input class="form-control" id="exampleCtrl" placeholder="000" type="text" required>
+                    </fieldset>
+                    <fieldset class="col-sm-4 pb-3">
+                        <label for="exampleAmount">Amount</label>
+                        <div class="input-group">
+                            <p class="fas fa-dollar-sign"></p>
+                            <label>
+                                <input class="form-control" id="exampleAmount" placeholder="Amount" type="number"
+                                    required>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="row">
+                        <fieldset class="col-sm-6 pb-3">
+                            <label for="exampleFirst">First Name</label>
+                            <input class="form-control" id="exampleFirst" type="text" required>
+                        </fieldset>
+                        <fieldset class="col-sm-6 pb-3">
+                            <label for="exampleLast">Last Name</label>
+                            <input class="form-control" id="exampleLast" type="text" required>
+                        </fieldset>
                     </div>
-                    <div class="card-body">
-                        <div class="alert alert-danger">Some fields are missing</div>
-                        <form action="#">
-                            <div class="row mt-4">
-                                <div class="col-sm-5 pb-3">
-                                    <form>
-                                        <label for="exampleAccount">Card #
-                                            <input class="form-control" id="exampleAccount"
-                                                placeholder="XXXXXXXXXXXXXXXX" type="text" required>
-                                    </form>
-                                </div>
-                                <div class="col-sm-3 pb-3">
-                                    <form>
-                                        <label for="exampleCtrl">CVC #</label>
-                                        <input class="form-control" id="exampleCtrl" placeholder="000" type="text"
-                                            required>
-                                    </form>
-                                </div>
-                                <div class="col-sm-4 pb-3">
-                                    <form>
-                                        <label for="exampleAmount">Amount</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <p class="fas fa-dollar-sign"></p>
-
-                                            </div>
-
-                                            <label>
-                                                <input class="form-control" id="exampleAmount" placeholder="Amount"
-                                                    type="number" required></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-6 pb-3">
-                                            <form>
-                                                <label for="exampleFirst">First Name</label>
-                                                <input class="form-control" id="exampleFirst" type="text" required>
-                                            </form>
-                                        </div>
-                                        <div class="col-sm-6 pb-3">
-                                            <form>
-                                                <label for="exampleLast">Last Name</label>
-                                                <input class="form-control" id="exampleLast" type="text" required>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-sm-6 pb-3">
-                                            <form>
-                                                <label for="exampleCity">City</label> <input class="form-control"
-                                                    id="exampleCity" type="text">
-
-
-                                            </form>
-
-                                        </div>
-
-                                        <div class="col-sm-3 pb-3">
-                                            <label for="exampleCity">State</label>
-
-                                            <select class="form-select " aria-label="Default select example">
-
-                                                <option selected>Pick a state</option>
-                                                <option value="1">Barcelona</option>
-                                                <option value="2">Tarragona</option>
-                                                <option value="3">Gerona</option>
-                                            </select>
-
-                                        </div>
-                                        <div class="col-sm-3 pb-3">
-                                            <label for="exampleZip">Postal Code</label>
-                                            <input class="form-control" id="exampleZip" type="text" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pb-3">
-                                    <p for="exampleAccount">We accept:</p>
-                                    <div class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" checked id="blue" name="options" type="radio"
-                                                required>
-                                            <i class="fab fa-cc-mastercard"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="red" name="options" type="radio">
-                                            <i class="fab fa-cc-visa"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="green" name="options" type="radio" required>
-                                            <i class="fab fa-cc-diners-club"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="yellow" name="options" type="radio" required>
-                                            <i class="fab fa-cc-amex"></i>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pb-3">
-                                    <label for="exampleMessage">Message</label>
-                                    <textarea class="form-control" id="complexExampleMessage" rows="3"></textarea>
-                                    <small class="text-muted">Add any notes here.</small>
-                                </div>
+                    <div class="row d-flex align-items-center">
+                        <fieldset class="col-sm-6 pb-3">
+                            <label for="exampleCity">City</label>
+                            <input class="form-control" id="exampleCity" type="text">
+                        </fieldset>
+                        <fieldset class="col-sm-3 pb-3">
+                            <label for="exampleCity">State</label>
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Pick a state</option>
+                                <option value="1">Barcelona</option>
+                                <option value="2">Tarragona</option>
+                                <option value="3">Gerona</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="col-sm-3 pb-3">
+                            <label for="exampleZip">Postal Code</label>
+                            <input class="form-control" id="exampleZip" type="text" required>
+                        </fieldset>
+                    </div>
+                    <div class="row">
+                        <fieldset class="col-md-6 pb-3">
+                            <p for="exampleAccount">We accept:</p>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" checked id="blue" name="options" type="radio" required>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="red" name="options" type="radio">
+                                    <i class="fab fa-cc-visa"></i>
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="green" name="options" type="radio" required>
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="yellow" name="options" type="radio" required>
+                                    <i class="fab fa-cc-amex"></i>
+                                </label>
                             </div>
-                            <div class="card-footer">
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-secondary" type="reset">Cancel</button>
-                                    <button id="sendForm" class="btn btn-primary" type="submit" />Send</button>
-                                </div>
-                            </div>
-                        </form>
+                        </fieldset>
+                        <fieldset class="col-md-6 pb-3">
+                            <label for="exampleMessage">Message</label>
+                            <textarea class="form-control" id="complexExampleMessage" rows="3"></textarea>
+                            <small class="text-muted">Add any notes here.</small>
+                        </fieldset>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-secondary" type="reset">Cancel</button>
+                            <button id="sendForm" class="btn btn-primary" type="submit" />Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>
